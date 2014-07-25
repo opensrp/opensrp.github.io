@@ -19,8 +19,13 @@ body{
 	background:url(../img/bg.jpg) no-repeat center;
 	background-size:125%;
 	height:50em;
-	transition:background-size 2s ease-in;
+	padding-top:6em;
+	transition:background-size 1.6s ease-in;
 }
 .zoom-in{
 	background-size:150%!important;
+}
+
+.video-box{
+	background:#ffffff;
 }
