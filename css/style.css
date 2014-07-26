@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5{
 	transition:background-size 1.2s ease-in;
 }
 .zoom-in{
-	background-size:140%!important;
+	background-size:135%!important;
 }
 
 .video-box{
