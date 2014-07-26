@@ -1,13 +1,17 @@
-
 *{
 	margin:0;padding:0;
 }
 
 body{
-	font:12px "museo-sans", sans-serif;
+	/*font:12px "museo-sans", sans-serif;*/
+	font:12px 'Source Sans Pro', sans-serif;
 	line-height:1.5em;
 	min-height:100em;
 }
+h1, h2, h3, h4, h5{
+	font-weight:700;
+}
+
 .container{
 	max-width:960px;
 }
@@ -20,12 +24,18 @@ body{
 	background-size:125%;
 	height:50em;
 	padding-top:6em;
-	transition:background-size 1.6s ease-in;
+	transition:background-size 1.2s ease-in;
 }
 .zoom-in{
-	background-size:150%!important;
+	background-size:140%!important;
 }
 
 .video-box{
 	background:#ffffff;
+	padding:1em 1.2em;
+	width:42.5em;
+}
+
+.intro-box{
+	
 }
