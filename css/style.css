@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5{
 	padding:1em 1.2em;
 	width:42.5em;
 }
+.video-box h2{
+	margin-top:0;
+}
 
 .intro-box{
 	font-size:1.5em;

@@ -6,14 +6,15 @@ $(document).ready(function(){
 	
     $(window).scroll(function(){
         var _cur_top = $(window).scrollTop();
+		var panel = $('.top-panel');
+				
+		if(_top < _cur_top){ // down-scroll
+			panel.addClass('zoom-in');
+		}
+		else{ // up-scroll
+			panel.removeClass('zoom-in');
+		}
 		
-        if(_top < _cur_top){
-			$('.top-panel').addClass('zoom-in'); // down-scroll
-        }
-        else{
-			$('.top-panel').removeClass('zoom-in'); // up-scroll
-        }
         _top = _cur_top;
-        console.log(_direction);
     });
 });
