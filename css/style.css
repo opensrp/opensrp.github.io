@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5{
 }
 .top-panel{
 	background:url(../img/bg.jpg) no-repeat center;
-	background-size:125%;
+	background-size:cover;
 	height:50em;
 	padding-top:6em;
 	transition:background-size 1.2s ease-in;
