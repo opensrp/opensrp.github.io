@@ -1,5 +1,5 @@
 /* custom.js */
-$(document).ready(function(){
+/*$(document).ready(function(){
 	
 	var _top = $(window).scrollTop();
     var _direction;
@@ -18,3 +18,4 @@ $(document).ready(function(){
         _top = _cur_top;
     });
 });
+*/
