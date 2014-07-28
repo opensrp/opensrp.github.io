@@ -4,7 +4,7 @@
 
 body{
 	/*font:12px "museo-sans", sans-serif;*/
-	font:12px 'Source Sans Pro', sans-serif;
+	font:12px 'museo-sans', sans-serif;
 	line-height:1.5em;
 	min-height:100em;
 }
