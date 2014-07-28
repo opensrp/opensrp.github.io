@@ -24,23 +24,78 @@ h1, h2, h3, h4, h5{
 	background-size:cover;
 	height:50em;
 	padding-top:6em;
+	border-bottom: 15px solid #23bff2;
 	transition:background-size 1.2s ease-in;
 }
 .zoom-in{
 	background-size:135%!important;
 }
 
-.video-box{
-	background:#ffffff;
-	padding:1em 1.2em;
-	width:42.5em;
+.top-box{
+	background-image: url(../img/shape.png);
+	background-repeat: no-repeat;
+	padding:1em 2.4em;
+	height:460px;
+	width:400px;
+	color: #FFF;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	font-weight: 300;
 }
+
+.top-box img.logo{
+	padding-top: 100px;
+	padding-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-box img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
 .video-box h2{
 	margin-top:0;
 }
 
 .intro-box{
-	font-size:1.5em;
+	font-size:1.2em;
+	padding:6em 0;
+}
+
+
+.logo-box{
+	text-align: center;
+	padding-bottom: 5em;
+}
+
+.logo-box img{
+	max-width:100%; 
+	height:auto;
+}
+
+.logo-box p{
+	font-size: 1.6em;
+	line-height: 1.7em;
+}
+
+.logo-box h4{
+	padding-top: 1.4em;
+}
+
+.contact-box{
+	font-size:1.6em;
 	line-height:1.6em;
-	padding:4em 0;
+	padding:5em 0em;
+	border-top: 15px solid #23bff2;
+	border-bottom:  15px solid #23bff2;
+	text-align: center;
+}
+
+.footer {
+	padding: 3em 0;
 }
