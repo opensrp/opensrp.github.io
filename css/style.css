@@ -7,6 +7,7 @@ body{
 	font:12px "museo-sans", sans-serif;
 	line-height:1.5em;
 	min-height:100em;
+	color:#595959;
 }
 h1, h2, h3, h4, h5{
 	font-weight:700;
