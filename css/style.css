@@ -98,6 +98,18 @@ h1, h2, h3, h4, h5{
 	padding-top: 1.4em;
 }
 
+.history-box{
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 3em;	
+	font-size: 1.2em;
+}
+
+.history-box h3{
+	text-align: center;
+	padding-top: 1.4em;
+}
+
 .contact-box{
 	font-size:1.6em;
 	line-height:1.6em;
