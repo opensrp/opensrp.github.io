@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5{
     border:0;
     border-radius:0;
     margin-bottom:0;
-    padding-top:3em;
+    padding-top:0em;
 }
 .navbar-brand > img{
     position: relative;
@@ -76,6 +76,15 @@ h1, h2, h3, h4, h5{
 
 .video-box h2{
 	margin-top:0;
+}
+
+.content-box{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size:1.2em;
+	line-height:1.4em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .intro-box{
@@ -135,4 +144,9 @@ h1, h2, h3, h4, h5{
 
 .footer {
 	padding: 3em 0;
+}
+
+.footer a {
+	margin-right: 1.5em;
+	color:#888;
 }
