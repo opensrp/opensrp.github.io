@@ -18,7 +18,22 @@ h1, h2, h3, h4, h5{
 }
 
 .navbar{
-	display:none;
+	background:#000;
+    border:0;
+    border-radius:0;
+    margin-bottom:0;
+    padding-top:3em;
+}
+.navbar-brand > img{
+    position: relative;
+    top: -4px;
+}
+.navbar-nav li a{
+    color:#ddd!important;
+    margin-right:1.5em;
+}
+.navbar-nav li.active a, .navbar-nav li a:hover{
+    background-color:#111!important;
 }
 .top-panel{
 	background:url(../img/bg.jpg) no-repeat center;
