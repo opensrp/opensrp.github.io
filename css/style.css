@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5{
 }
 .navbar-brand > img{
     position: relative;
-    top: -4px;
+    top: -2px;
 }
 .navbar-nav li a{
     color:#ddd!important;
