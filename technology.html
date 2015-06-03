@@ -53,11 +53,14 @@
 		<p>At the heart of OpenSRP is the smart register.  This is where frontline health workers view and manage all of their digitized client records.  One client is listed per row, and medical history and health service information is listed across pre-specified columns.  By standardizing the way client information is captured and displayed, smart registers allow the user to easily search for and extract information at the point of service delivery, a critical component of effective healthcare provision.</p>
 
 		<p>The smart register concept was inspired by (and also mimics the look of) traditional paper registers and ledgers that are still used today across a majority of low and middle income countries as the data backbone of their national health systems.  Unlike paper registers, however, smart registers do not suffer from the many limitations of pen and paper-based data entry.  The features that are built into the smart register platform are designed to match and enhance the frontline health worker’s dynamic patient workflow, instead of acting as a hindrance.</p>
-
+		<br>
 		<h4>Open SRP Features</h4>
 
 		<h5>Automated Scheduling</h5>
 		<p>OpenSRP uses advanced, multi-parameter scheduling logic to ensure frontline health workers provide services in alignment with national and global health standards of care.  Health service reminders are displayed as color-coded alerts to the health worker based on the urgency of the service due, ensuring that clients receive appropriate and timely healthcare.</p>
+
+		<p><img src="img/tech-auto-scheduling.png" width="100%"></p>
+		<p><img src="img/tech-scheduling-immunizations.png" width="100%"></p>
 
 		<h5>Enketo Webforms</h5>
 
@@ -69,10 +72,15 @@
 		
 		<p>OpenSRP has the ability to automatically profile and flag patients who are at high risk for adverse health outcomes.  Profiling logic can be customized to the local health setting and is embedded in the form logic.  Health workers are alerted to high risk cases when they look up the patient and at the point of data entry.  Customized messages and decision support in the forms are based on the specific risk profile of the client and serve to remind the health worker of appropriate medical guidelines and protocols.</p>
 
+		<p><img src="img/tech-risk-profiling.png" width="100%"></p>
+
 		<h5>Dynamic Patient Lookups</h5>
 		<p>With paper registers, client lists are static, which makes patient lookups difficult.  For frontline health workers, who often go door to door to provide health checkups, it would be useful to have a way to dynamically filter, sort, and search for her clients based on her movements through her community or catchment area. </p>
 
 		<p>OpenSRP has a customizable array of dynamic sort and filter options to rearrange and filter down lists of clients to better match a health worker’s immediate work needs.  Once time-consuming tasks such as looking up clients by family planning method becomes effortless</p>
+
+		<p><img src="img/tech-ec-sort01.png" width="100%"></p>
+		<p><img src="img/tech-ec-sort02.png" width="100%"></p>
 
 		<h5>Automated Reporting</h5>
 		<p>Paper-based reporting and manual calculation of health indicators remains a burden for health workers all over the world, especially in settings where resources are limited and patient load is high.  One of the benefits of switching to a digitized record-keeping system is the ability to automate and standardize reporting at all levels in the healthcare system.  Data which is entered through Enketo webforms in OpenSRP is automatically aggregated and can be displayed back to the health worker in a separate reporting module.  By integrating with OpenMRS, users can take advantage of the robust reporting module in OpenMRS to create advanced reports that can match existing government templates.</p>
@@ -85,13 +93,16 @@
 
 		<p>As more and more countries adopt eHealth systems, including OpenSRP, attention quickly shifts to the need for integration of existing electronic health systems to ensure the continuity of care for patients within a population and to eliminate duplicate efforts.  By integrating with OpenMRS, patient data that is entered in OpenSRP also becomes available in OpenMRS.  In health settings where governments have adopted OpenSRP at the community level and OpenMRS in hospitals and other tertiary level facilities, patients can easily start treatment at their community health center and then subsequently seek care at a hospital or other higher level facility and have their medical records be securely and automatically transferred.</p>
 
+<br>
+
 		<h3>System Architecture</h3>
 
 		<h4>OpenSRP Client Technologies</h4>
 		<p>The OpenSRP client (Android application) code lives in a <a href="https://github.com/OpenSRP/opensrp-client">Git repository</a>.  The README file includes instructions to setup the system and also contains the public credentials for testing the application.</p>
 
 		<p>A brief of the technologies used in the OpenSRP Client:</p>
-		<p><img src="#" height="600" width="600"></p>
+		
+		<p><img src="img/tech-client-tech.jpg" width="100%"></p>
 
 		<h5>Smart Register Client (Android)</h5>
 		<p>Standard Android application that hosts the client record store, ziggy, Enketo HTML5 forms, webviews via android native in addition to ability to synchronize to the Smarty Register backend.</p>
@@ -111,6 +122,8 @@
 		<h5>Risk Profiling</h5>
 		<p>Custom logic, authored on the xlsforms that evaluates as client information comes in if they are at high risk.</p>
 		
+		<br>
+
 		<h4>OpenSRP Server Technologies</h4>
 		<p>OpenSRP server code lives in a <a href="https://github.com/OpenSRP/opensrp-server">Git repository</a>.  The README file includes instructions to setup the system and the public credentials for testing the app.</p>
 		
@@ -118,8 +131,7 @@
 
 		<p>A brief of the technologies used in the OpenSRP Client:</p>
 
-		<p><img src="#" height="600" width="600"></p>
-
+		<p><img src="img/tech-server-tech.jpg" width="100%"></p>
 
 		<h5>Scheduling Engine</h5>
 		<p>OpenSRP uses motech library for all types of scheduling; all in 2 categories:</p>
@@ -138,7 +150,7 @@
 
 		<h5>OpenMRS</h5>
 		<p>A patient-centric, widely used medical record system used for view of registries and reports. Gets data from the REST API.</p>
-
+<br>
 
 		<h3>Technologies &amp; Vendors Supporting the Open Smart Register Platform</h3>
 
@@ -149,7 +161,7 @@
 		<p>The existing <b>MoTeCH</b> platform which provides libraries that makes areas such as writing health schedules and generating alerts and reminders and <b>RapidPro</b> workflows for communicating via SMS and IVR more efficient. The Ona platform is used to author and organize the forms used in the application, taking advantage of the robust organization and project management functionalities of the platform.</p>
 
 		<p>OpenSRP integrates with <b>OpenMRS</b> for the primary health record store, storing the data in a format that is widely used and recognized in health systems around the world. OpenSRP also leverages on the OpenMRS robust reporting, user and team management and location mapping modules.</p>
-
+<br>
 
 		<h3>Documentation &amp; Collaboration</h3>
 
