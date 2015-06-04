@@ -12,7 +12,7 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-<header class="navbar navbar-default" role="navigation">
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://www.smartregister.org/">
+      <a class="navbar-brand" href="index.html">
           <img src="img/logo-mini.png" class="img-responsive"/>
       </a>
     </div>
@@ -30,10 +30,42 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="nav-collapse">
 		<ul class="nav navbar-nav">
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="technology.html">TECHNOLOGY</a></li>
-			<li><a href="adaptation-process.html">ADAPTATION PROCESS</a></li>
-			<li class="active"><a href="implementations-pakistan.html">IMPLEMENTATIONS</a></li>
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="about-about-opensrp.html">About OpenSRP</a></li>
+	            <li><a href="about-history.html">History</a></li>
+	            <li><a href="about-thrive-consortium.html">THRIVE Consortium</a></li>
+	            <li><a href="about-opensrp-content.html">OpenSRP Content</a></li>
+	            <li><a href="about-governance.html">Governance</a></li>
+	          </ul>
+	        </li>
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TECHNOLOGY<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="tech-different.html">How is it different?</a></li>
+	            <li><a href="tech-architecture.html">System Architecture</a></li>
+	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
+	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADAPTATION PROCESS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="adaptation-overview.html">Process Overview</a></li>
+	            <li><a href="adaptation-study.html">THRIVE Multi-site Study</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMPLEMENTATIONS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="implementations-pakistan.html">Pakistan</a></li>
+	            <li><a href="implementations-indonesia.html">Indonesia</a></li>
+	            <li><a href="implementations-bangladesh.html">Bangladesh</a></li>
+	          </ul>
+	        </li>
 		</ul>
     </div>
   </div>
@@ -41,35 +73,22 @@
 
 
 <div class="container content-box">
-	<div class="col-md-8">
+	<div class="col-md-12">
+			<h2>Implementations</h2>
+			<br>
+			<ul class="nav nav-tabs">
+		  		<li class="active"><a href="implementations-pakistan.html">Pakistan</a></li>
+		  		<li><a href="implementations-indonesia.html">Indonesia</a></li>
+		  		<li><a href="implementations-bangladesh.html">Bangladesh</a></li>
+			</ul>
+	</div>
 		
-		<h2>Implementations</h2>
-		<br>
-		<ul class="nav nav-tabs">
-	  		<li class="active"><a href="implementations-pakistan.html">Pakistan</a></li>
-	  		<li><a href="implementations-indonesia.html">Indonesia</a></li>
-	  		<li><a href="implementations-bangladesh.html">Bangladesh</a></li>
-		</ul>
+	<div class="col-md-9">
 
 		<br>
-		<h3>Pakistan</h3>
-
+		
 		<p><img src="img/implementation-pakistan.jpg" width="100%"></p>
 
-		<h5>THRIVE Pakistan Consortium Members</h5>
-		<div><ul>
-			<li>Interactive Research and Development (IRD)</li>
-			<li>Interactive Health Solutions (IHS)</li>
-			<li>Health Department, Government of Sindh</li>
-		</ul>
-		</div>
-		<div>
-			<br>
-			<p><h5>Location: Korangi, Karachi, Pakistan</h5>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57937.360596828636!2d67.13103315!3d24.826765350000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b07c73d0a7f%3A0xecc47fa378e95fd5!2sKorangi%2C+Karachi%2C+Pakistan!5e0!3m2!1sen!2sus!4v1433269211246" width="400" height="300" frameborder="0" style="border:0"></iframe>
-			</p>
-		</div>
-<br>
 		<h4>THRIVE Pakistan: Health Focus and Application Use</h4>
 		<p>The Pakistan arm of the THRIVE OpenSRP deployment will take place in Korangi town--an ethnically and economically diverse urban area within Karachi city with an estimated population of 1.2 million people. Healthcare in Korangi is available through a mixture of public and private healthcare facilities, but with much of the population unable to afford private care, most depend on the public health sector for essential health services.</p>
 
@@ -79,15 +98,36 @@
 
 		<p>Also, due to a severe lack of resources the proper channels of reporting are mostly not followed. The necessary registers and forms are rarely provided by the health department, resulting in inaccurate statistics. The larger hospitals/health facilities have designed internal reporting mechanisms to maintain their own databases. However, individual patients’ records continue to be ignored. Patients’ histories and ANC progress reports are kept with patients rather than the hospital, resulting in the need to retake history at the next ANC enrolment.</p>
 	</div>
+
+		<div class="col-md-3">
+
+		<h4>THRIVE Pakistan Consortium Members</h4>
+		<ul>
+			<li>Interactive Research and Development</li>
+			<li>Interactive Health Solutions</li>
+			<li>Health Department, Government of Sindh</li>
+		</ul>
+			<p><h4>Location</h4>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57937.360596828636!2d67.13103315!3d24.826765350000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b07c73d0a7f%3A0xecc47fa378e95fd5!2sKorangi%2C+Karachi%2C+Pakistan!5e0!3m2!1sen!2sus!4v1433269211246" width="100%" height="250" frameborder="0" style="border:0"></iframe><br><p><a href="https://maps.google.com/maps?ll=24.826765,67.131033&z=11&t=m&hl=en-US&gl=US&mapclient=embed&q=Korangi%20Karachi%20Pakistan">Korangi, Karachi, Pakistan</a></p>
+			</p>
+		</div>
+	</div>	
+	</div>
 </div>
 
 
+
 <div class="container footer">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="technology.html">Technology</a>
-		<a href="adaptation-process.html">Adaptation Process</a>
-		<a href="implementations.html">Implementations</a>
+		<div class="col-md-6" style="padding-top: 5px;">
+			<a href="index.html">Home</a>
+			<a href="about-about-opensrp.html">About</a>
+			<a href="tech-different.html">Technology</a>
+			<a href="adaptation-overview.html">Adaptation Process</a>
+			<a href="implementations-pakistan.html">Implementations</a>
+		</div>
+		<div class="col-md-6" >
+			<img src="img/logo-footer.png" height="25px" style="position: absolute; right:0px;">
+		</div>
 </div>
 
 <script src="js/jquery.min.js"></script>

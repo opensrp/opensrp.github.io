@@ -6,19 +6,39 @@ body{
 	/*font:12px "museo-sans", sans-serif;*/
 	font:12px "museo-sans", sans-serif;
 	line-height:1.5em;
-	min-height:100em;
-	color:#595959;
+	/*min-height:500px;*/
+	color:#21272d;
+	padding-top: 50px;
+	height: 100%;
+	background-image: url('../img/bgtexture.png');
+    background-repeat: repeat-x;
 }
 h1, h2, h3, h4, h5{
 	font-weight:700;
 }
 
+h2, h3 {
+  margin-top: 0px;
+  color:#3fa1da;
+}
+
+h4 {
+  margin-top: 20px;
+  color:#114e71;
+}
+
+h5 {
+  color:#8dc540;
+}
+
+
 .container{
 	max-width:960px;
+	height: 100%;
 }
 
 .navbar{
-	background:#000;
+	background:#2b475e;
     border:0;
     border-radius:0;
     margin-bottom:0;
@@ -29,12 +49,36 @@ h1, h2, h3, h4, h5{
     top: -2px;
 }
 .navbar-nav li a{
-    color:#ddd!important;
+    color:#f5f5f5!important;
     margin-right:1.5em;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
 }
 .navbar-nav li.active a, .navbar-nav li a:hover{
-    background-color:#111!important;
+    background-color:#444!important;
 }
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  	background-color: #333333;
+}
+
+.nav-stacked {
+	padding-bottom: 30px;
+}
+
+.nav-stacked li a {
+	font-size: 0.9em;
+}
+
+
+.dropdown-menu {
+	background-color: #333;
+}
+
+.dropdown-menu li a{
+	margin-right:0em!important;
+}
+
 .top-panel{
 	background:url(../img/bg.jpg) no-repeat center;
 	background-size:cover;
@@ -81,8 +125,8 @@ h1, h2, h3, h4, h5{
 .content-box{
 	padding-top: 40px;
 	padding-bottom: 20px;
-	font-size:1.2em;
-	line-height:1.4em;
+	font-size:1.35em;
+	line-height:1.5em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -143,7 +187,8 @@ h1, h2, h3, h4, h5{
 }
 
 .footer {
-	padding: 3em 0;
+	padding: 2em 0 2.2em 0;
+	border-top: 1px solid #ccc;
 }
 
 .footer a {

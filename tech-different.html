@@ -12,7 +12,7 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-<header class="navbar navbar-default" role="navigation">
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://www.smartregister.org/">
+      <a class="navbar-brand" href="index.html">
           <img src="img/logo-mini.png" class="img-responsive"/>
       </a>
     </div>
@@ -30,10 +30,42 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="nav-collapse">
 		<ul class="nav navbar-nav">
-			<li><a href="about.html">ABOUT</a></li>
-			<li class="active"><a href="technology.html">TECHNOLOGY</a></li>
-			<li><a href="adaptation-process.html">ADAPTATION PROCESS</a></li>
-			<li><a href="implementations-pakistan.html">IMPLEMENTATIONS</a></li>
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="about-about-opensrp.html">About OpenSRP</a></li>
+	            <li><a href="about-history.html">History</a></li>
+	            <li><a href="about-thrive-consortium.html">THRIVE Consortium</a></li>
+	            <li><a href="about-opensrp-content.html">OpenSRP Content</a></li>
+	            <li><a href="about-governance.html">Governance</a></li>
+	          </ul>
+	        </li>
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TECHNOLOGY<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="tech-different.html">How is it different?</a></li>
+	            <li><a href="tech-architecture.html">System Architecture</a></li>
+	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
+	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADAPTATION PROCESS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="adaptation-overview.html">Process Overview</a></li>
+	            <li><a href="adaptation-study.html">THRIVE Multi-site Study</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMPLEMENTATIONS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="implementations-pakistan.html">Pakistan</a></li>
+	            <li><a href="implementations-indonesia.html">Indonesia</a></li>
+	            <li><a href="implementations-bangladesh.html">Bangladesh</a></li>
+	          </ul>
+	        </li>
 		</ul>
     </div>
   </div>
@@ -41,40 +73,46 @@
 
 
 <div class="container content-box">
-	<div class="col-md-8">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+	            <li class="active"><a href="tech-different.html">How is it different?</a></li>
+	            <li><a href="tech-architecture.html">System Architecture</a></li>
+	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
+	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+		</ul>
+	</div>
+	<div class="col-md-9">
 		
-		<h2>Technology</h2>
+		<h2>How is it different?</h2>
 		<br>
-		<h3>How is it different?</h3>
-
-		<h4>Smart Registers</h4>
+		<h3>Smart Registers</h3>
 		<p>Existing technology solutions are fragmented, unscalable, functionally limited, and are not interoperable with national-level information systems. A government owned and operated, enterprise-grade solution is needed to connect Frontline Health Workers to national health systems, which improves primary health care service delivery, strengthens accountability, and generates real-time data for improved monitoring and evaluation.  The Open Smart Register Platform was purposefully designed with end-users, to complement and bolster other robust and widely deployed information technology solutions, including <b>OpenMRS as the backend for clinical reporting</b>, and <b>DHIS2 for reporting</b>.</p>
 
 		<p>At the heart of OpenSRP is the smart register.  This is where frontline health workers view and manage all of their digitized client records.  One client is listed per row, and medical history and health service information is listed across pre-specified columns.  By standardizing the way client information is captured and displayed, smart registers allow the user to easily search for and extract information at the point of service delivery, a critical component of effective healthcare provision.</p>
 
 		<p>The smart register concept was inspired by (and also mimics the look of) traditional paper registers and ledgers that are still used today across a majority of low and middle income countries as the data backbone of their national health systems.  Unlike paper registers, however, smart registers do not suffer from the many limitations of pen and paper-based data entry.  The features that are built into the smart register platform are designed to match and enhance the frontline health worker’s dynamic patient workflow, instead of acting as a hindrance.</p>
 		<br>
-		<h4>Open SRP Features</h4>
+		<h3>OpenSRP Features</h3>
 
-		<h5>Automated Scheduling</h5>
+		<h4>Automated Scheduling</h4>
 		<p>OpenSRP uses advanced, multi-parameter scheduling logic to ensure frontline health workers provide services in alignment with national and global health standards of care.  Health service reminders are displayed as color-coded alerts to the health worker based on the urgency of the service due, ensuring that clients receive appropriate and timely healthcare.</p>
 
 		<p><img src="img/tech-auto-scheduling.png" width="100%"></p>
 		<p><img src="img/tech-scheduling-immunizations.png" width="100%"></p>
 
-		<h5>Enketo Webforms</h5>
+		<h4>Enketo Webforms</h4>
 
 		<p>OpenSRP uses Enketo Smart Paper webforms for data entry.  Forms are launched directly from the smart registers at the tap of a button and allow for offline data entry in areas where a network connection is not always available.  Data submitted in the form instantly updates the patient’s record in the smart register without requiring an initial sync with the server.   Data is safely stored offline until the device has a network connection and the data is submitted to the secured server.</p>
 
 		<p>Enketo forms are the next evolution of webforms, as they allow the user to enter data in a non-linear and less restrictive format, which is a critical factor for user uptake and satisfaction.  Skip logic becomes visible, allowing the health worker to see data fields expand or collapse based on their input.  Enketo forms are written using the XLSForm standard, which allows users to have the control they need in their forms to ensure high data quality and fidelity.</p>
 
-		<h5>Risk Profiling</h5>
+		<h4>Risk Profiling</h4>
 		
 		<p>OpenSRP has the ability to automatically profile and flag patients who are at high risk for adverse health outcomes.  Profiling logic can be customized to the local health setting and is embedded in the form logic.  Health workers are alerted to high risk cases when they look up the patient and at the point of data entry.  Customized messages and decision support in the forms are based on the specific risk profile of the client and serve to remind the health worker of appropriate medical guidelines and protocols.</p>
 
 		<p><img src="img/tech-risk-profiling.png" width="100%"></p>
 
-		<h5>Dynamic Patient Lookups</h5>
+		<h4>Dynamic Patient Lookups</h4>
 		<p>With paper registers, client lists are static, which makes patient lookups difficult.  For frontline health workers, who often go door to door to provide health checkups, it would be useful to have a way to dynamically filter, sort, and search for her clients based on her movements through her community or catchment area. </p>
 
 		<p>OpenSRP has a customizable array of dynamic sort and filter options to rearrange and filter down lists of clients to better match a health worker’s immediate work needs.  Once time-consuming tasks such as looking up clients by family planning method becomes effortless</p>
@@ -82,115 +120,31 @@
 		<p><img src="img/tech-ec-sort01.png" width="100%"></p>
 		<p><img src="img/tech-ec-sort02.png" width="100%"></p>
 
-		<h5>Automated Reporting</h5>
+		<h4>Automated Reporting</h4>
 		<p>Paper-based reporting and manual calculation of health indicators remains a burden for health workers all over the world, especially in settings where resources are limited and patient load is high.  One of the benefits of switching to a digitized record-keeping system is the ability to automate and standardize reporting at all levels in the healthcare system.  Data which is entered through Enketo webforms in OpenSRP is automatically aggregated and can be displayed back to the health worker in a separate reporting module.  By integrating with OpenMRS, users can take advantage of the robust reporting module in OpenMRS to create advanced reports that can match existing government templates.</p>
 
-		<h5>Multimedia Integration</h5>
+		<h4>Multimedia Integration</h4>
 
 		<p>OpenSRP supports multimedia use for clients, such as health education and counseling videos.  Health workers can easily switch from their smart register view to the video module during patient encounters to couple health service provision with client education and counseling.</p>
 
-		<h5>Continuum of Care</h5>
+		<h4>Continuum of Care</h4>
 
 		<p>As more and more countries adopt eHealth systems, including OpenSRP, attention quickly shifts to the need for integration of existing electronic health systems to ensure the continuity of care for patients within a population and to eliminate duplicate efforts.  By integrating with OpenMRS, patient data that is entered in OpenSRP also becomes available in OpenMRS.  In health settings where governments have adopted OpenSRP at the community level and OpenMRS in hospitals and other tertiary level facilities, patients can easily start treatment at their community health center and then subsequently seek care at a hospital or other higher level facility and have their medical records be securely and automatically transferred.</p>
-
-<br>
-
-		<h3>System Architecture</h3>
-
-		<h4>OpenSRP Client Technologies</h4>
-		<p>The OpenSRP client (Android application) code lives in a <a href="https://github.com/OpenSRP/opensrp-client">Git repository</a>.  The README file includes instructions to setup the system and also contains the public credentials for testing the application.</p>
-
-		<p>A brief of the technologies used in the OpenSRP Client:</p>
-		
-		<p><img src="img/tech-client-tech.jpg" width="100%"></p>
-
-		<h5>Smart Register Client (Android)</h5>
-		<p>Standard Android application that hosts the client record store, ziggy, Enketo HTML5 forms, webviews via android native in addition to ability to synchronize to the Smarty Register backend.</p>
-
-		<h5>Client Records</h5>
-		<p>Client records are stored in SqlLite and then encrypted with SqlCypher for basic aggregate reporting.</p>
-		
-		<h5>Smart Register Views</h5>
-		<p>Register UI is done with Android native code. This makes development of new UI’s components very quick.</p>
-		
-		<h5>Ziggy.js</h5>
-		<p>Ziggy.js maps client data from the model into forms. Ie) it picks both mother and child information and insert it into a PNC form,maps form submissions back to the corresponding client record,processes submissions received from the server.</p>
-		
-		<h5>Enketo HTML5 Forms</h5>
-		<p>Enketo HTML5 forms are authored from XLSForms in Ona. HTML5 forms allows us to remove the Javarosa dependency greatly simplifying things. To be saved in OpenMRS, all concepts from the client have the corresponding concept UUID. </p>
-		
-		<h5>Risk Profiling</h5>
-		<p>Custom logic, authored on the xlsforms that evaluates as client information comes in if they are at high risk.</p>
-		
-		<br>
-
-		<h4>OpenSRP Server Technologies</h4>
-		<p>OpenSRP server code lives in a <a href="https://github.com/OpenSRP/opensrp-server">Git repository</a>.  The README file includes instructions to setup the system and the public credentials for testing the app.</p>
-		
-		<p>OpenSRP server runs CouchDB - a document-oriented NoSQL database system that uses json to store data. All data collected from the client and stored on couchDB is also stored in OpenMRS; at this point, we leverage the excellent and robust functionalities of OpenMRS including reporting, querying etc.</p>
-
-		<p>A brief of the technologies used in the OpenSRP Client:</p>
-
-		<p><img src="img/tech-server-tech.jpg" width="100%"></p>
-
-		<h5>Scheduling Engine</h5>
-		<p>OpenSRP uses motech library for all types of scheduling; all in 2 categories:</p>
-		<ol>
-			<li>Simple task or event scheduling: It includes repeatable schedules, cron based jobs, and simple events which have no dependencies.</li>
-			<li>Trackable/Health schedule: Predefined schedules having different strategy or schedule for different periods of time from a given reference date.</li>
-
-		<h5>Client Records</h5>
-		<p>Currently stored in a simple CouchDB database and in OpenMRS.</p>
-
-		<h5>OpenSRP-OpenMRS connector</h5>
-		<p>User authentication, location and team mapping modules reside at OpenMRS and are used by the OpenSRP client.</p>
-
-		<h5>Ziggy.js</h5>
-		<p>Ziggy submissions are replayed in a Rhino JS server. This recreates the client records in the backend that are on the Android client.</p>
-
-		<h5>OpenMRS</h5>
-		<p>A patient-centric, widely used medical record system used for view of registries and reports. Gets data from the REST API.</p>
-<br>
-
-		<h3>Technologies &amp; Vendors Supporting the Open Smart Register Platform</h3>
-
-		<p>The Open Smart Register Platform (OpenSRP) leverages several popular open source platforms while incorporating new open source technologies developed to make it easier to create interactive and intelligent mobile interfaces. The mobile client consists of an Android application with a Smart Registry UI optimized for tablets. Data is collected on the app with Enketo smart paper forms, which are built to resemble paper, but supports advanced skip/form logic including constraint checks. The app is built to allow the health care worker to register, update client details, including transition from different registers e.g. antenatal care to post-natal care register, and review clients when not online and then sync intelligently when connected.</p>
-
-		<p>The Smart Registry backend, which provides ability to store basic patient records in a document-based database (couchDB), incorporates:</p>
-
-		<p>The existing <b>MoTeCH</b> platform which provides libraries that makes areas such as writing health schedules and generating alerts and reminders and <b>RapidPro</b> workflows for communicating via SMS and IVR more efficient. The Ona platform is used to author and organize the forms used in the application, taking advantage of the robust organization and project management functionalities of the platform.</p>
-
-		<p>OpenSRP integrates with <b>OpenMRS</b> for the primary health record store, storing the data in a format that is widely used and recognized in health systems around the world. OpenSRP also leverages on the OpenMRS robust reporting, user and team management and location mapping modules.</p>
-<br>
-
-		<h3>Documentation &amp; Collaboration</h3>
-
-		<h5>OpenSRP Wiki</h5>
-		<p>All technical documentation on OpenSRP resides on the wiki: <a href="http://smartregister.atlassian.net">http://smartregister.atlassian.net</a>. This is the best place to start if you are interested in contributing to OpenSRP development.</p>
-
-
-		<h5>Join the Conversation</h5>
-		<p>Have any questions, drop us an email on the <a href="https://groups.google.com/forum/#!forum/opensrp-dev">Developer’s Mailing List.</a></p>
-
-
-		<h5>License</h5>
-		<p>The <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a> gives you the right to use, copy, distribute and modify the OpenSRP software.  However, this license does not grant anyone the right to use the OpenSRP brand or logo.<p>
-		<p>The application is available for free download and can run on any 7 inch or larger mobile device running the latest Android software.</p>
-
-
-		<h5>OpenSRP Collaboration</h5>
-		<p>The OpenSRP client (Android application) code lives in a <a href="https://github.com/OpenSRP/opensrp-client">Git repository</a> and the OpenSRP server code lives in a <a href="https://github.com/OpenSRP/opensrp-server">Git repository</a>. The README file includes instructions to setup the system and also contains the public credentials for testing the application.</p>
 
 	</div>
 </div>
 
-
 <div class="container footer">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="technology.html">Technology</a>
-		<a href="adaptation-process.html">Adaptation Process</a>
-		<a href="implementations.html">Implementations</a>
+		<div class="col-md-6" style="padding-top: 5px;">
+			<a href="index.html">Home</a>
+			<a href="about-about-opensrp.html">About</a>
+			<a href="tech-different.html">Technology</a>
+			<a href="adaptation-overview.html">Adaptation Process</a>
+			<a href="implementations-pakistan.html">Implementations</a>
+		</div>
+		<div class="col-md-6" >
+			<img src="img/logo-footer.png" height="25px" style="position: absolute; right:0px;">
+		</div>
 </div>
 
 <script src="js/jquery.min.js"></script>
