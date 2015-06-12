@@ -8,6 +8,10 @@
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
 <script type="text/javascript" src="//use.typekit.net/cqm0oty.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
@@ -28,46 +32,12 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="nav-collapse">
-		<ul class="nav navbar-nav">
-	          <li class="dropdown">
-	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
-	          	<ul class="dropdown-menu" role="menu">
-	            <li><a href="about-about-opensrp.html">About OpenSRP</a></li>
-	            <li><a href="about-history.html">History</a></li>
-	            <li><a href="about-thrive-consortium.html">THRIVE Consortium</a></li>
-	            <li><a href="about-opensrp-content.html">OpenSRP Content</a></li>
-	            <li><a href="about-governance.html">Governance</a></li>
-	          </ul>
-	        </li>
-	          <li class="dropdown">
-	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TECHNOLOGY<span class="caret"></span></a>
-	          	<ul class="dropdown-menu" role="menu">
-	            <li><a href="tech-different.html">How is it different?</a></li>
-	            <li><a href="tech-architecture.html">System Architecture</a></li>
-	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
-	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
-	          </ul>
-	        </li>
+    <div id="navigation"></div>
 
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADAPTATION PROCESS<span class="caret"></span></a>
-	          <ul class="dropdown-menu" role="menu">
-	            <li><a href="adaptation-overview.html">Process Overview</a></li>
-	            <li><a href="adaptation-study.html">THRIVE Multi-site Study</a></li>
-	          </ul>
-	        </li>
+	<script>
+        $("#navigation").load("resources/nav.html");
+	</script>
 
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMPLEMENTATIONS<span class="caret"></span></a>
-	          <ul class="dropdown-menu" role="menu">
-	            <li><a href="implementations-pakistan.html">Pakistan</a></li>
-	            <li><a href="implementations-indonesia.html">Indonesia</a></li>
-	            <li><a href="implementations-bangladesh.html">Bangladesh</a></li>
-	          </ul>
-	        </li>
-		</ul>
-    </div>
   </div>
 </header>
 
@@ -107,8 +77,5 @@
 		</div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
 </body>
 </html>
