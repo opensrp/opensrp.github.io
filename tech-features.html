@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Technology | Open Smart Register Platform</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+
+<script type="text/javascript" src="//use.typekit.net/cqm0oty.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo-mini.png" class="img-responsive"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="nav-collapse">
+		<ul class="nav navbar-nav">
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="about-about-opensrp.html">About OpenSRP</a></li>
+	            <li><a href="about-history.html">History</a></li>
+	            <li><a href="about-thrive-consortium.html">THRIVE Consortium</a></li>
+	            <li><a href="about-opensrp-content.html">OpenSRP Content</a></li>
+	            <li><a href="about-governance.html">Governance</a></li>
+	          </ul>
+	        </li>
+	          <li class="dropdown">
+	          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TECHNOLOGY<span class="caret"></span></a>
+	          	<ul class="dropdown-menu" role="menu">
+	            <li><a href="tech-different.html">How is it different?</a></li>
+	            <li><a href="tech-architecture.html">System Architecture</a></li>
+	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
+	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADAPTATION PROCESS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="adaptation-overview.html">Process Overview</a></li>
+	            <li><a href="adaptation-study.html">THRIVE Multi-site Study</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IMPLEMENTATIONS<span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li><a href="implementations-pakistan.html">Pakistan</a></li>
+	            <li><a href="implementations-indonesia.html">Indonesia</a></li>
+	            <li><a href="implementations-bangladesh.html">Bangladesh</a></li>
+	          </ul>
+	        </li>
+		</ul>
+    </div>
+  </div>
+</header>
+
+
+<div class="container content-box">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+	            <li><a href="tech-different.html">How is it different?</a></li>
+	            <li class="active"><a href="tech-features.html">OpenSRP Features</a></li>
+	            <li><a href="tech-architecture.html">System Architecture</a></li>
+	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
+	            <li><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+		</ul>
+	</div>
+	<div class="col-md-9">
+		
+		<h2>OpenSRP Features</h2>
+
+		<h4>Automated Scheduling</h4>
+		<p>OpenSRP uses advanced, multi-parameter scheduling logic to ensure frontline health workers provide services in alignment with national and global health standards of care.  Health service reminders are displayed as color-coded alerts to the health worker based on the urgency of the service due, ensuring that clients receive appropriate and timely healthcare.</p>
+
+		<p><img src="img/tech-auto-scheduling.png" width="100%"></p>
+		<p><img src="img/tech-scheduling-immunizations.png" width="100%"></p>
+
+		<h4>Enketo Webforms</h4>
+
+		<p>OpenSRP uses Enketo Smart Paper webforms for data entry.  Forms are launched directly from the smart registers at the tap of a button and allow for offline data entry in areas where a network connection is not always available.  Data submitted in the form instantly updates the patient’s record in the smart register without requiring an initial sync with the server.   Data is safely stored offline until the device has a network connection and the data is submitted to the secured server.</p>
+
+		<p>Enketo forms are the next evolution of webforms, as they allow the user to enter data in a non-linear and less restrictive format, which is a critical factor for user uptake and satisfaction.  Skip logic becomes visible, allowing the health worker to see data fields expand or collapse based on their input.  Enketo forms are written using the XLSForm standard, which allows users to have the control they need in their forms to ensure high data quality and fidelity.</p>
+
+		<h4>Risk Profiling</h4>
+		
+		<p>OpenSRP has the ability to automatically profile and flag patients who are at high risk for adverse health outcomes.  Profiling logic can be customized to the local health setting and is embedded in the form logic.  Health workers are alerted to high risk cases when they look up the patient and at the point of data entry.  Customized messages and decision support in the forms are based on the specific risk profile of the client and serve to remind the health worker of appropriate medical guidelines and protocols.</p>
+
+		<p><img src="img/tech-risk-profiling.png" width="100%"></p>
+
+		<h4>Dynamic Patient Lookups</h4>
+		<p>With paper registers, client lists are static, which makes patient lookups difficult.  For frontline health workers, who often go door to door to provide health checkups, it would be useful to have a way to dynamically filter, sort, and search for her clients based on her movements through her community or catchment area. </p>
+
+		<p>OpenSRP has a customizable array of dynamic sort and filter options to rearrange and filter down lists of clients to better match a health worker’s immediate work needs.  Once time-consuming tasks such as looking up clients by family planning method becomes effortless</p>
+
+		<p><img src="img/tech-ec-sort01.png" width="100%"></p>
+		<p><img src="img/tech-ec-sort02.png" width="100%"></p>
+
+		<h4>Automated Reporting</h4>
+		<p>Paper-based reporting and manual calculation of health indicators remains a burden for health workers all over the world, especially in settings where resources are limited and patient load is high.  One of the benefits of switching to a digitized record-keeping system is the ability to automate and standardize reporting at all levels in the healthcare system.  Data which is entered through Enketo webforms in OpenSRP is automatically aggregated and can be displayed back to the health worker in a separate reporting module.  By integrating with OpenMRS, users can take advantage of the robust reporting module in OpenMRS to create advanced reports that can match existing government templates.</p>
+
+		<h4>Multimedia Integration</h4>
+
+		<p>OpenSRP supports multimedia use for clients, such as health education and counseling videos.  Health workers can easily switch from their smart register view to the video module during patient encounters to couple health service provision with client education and counseling.</p>
+
+		<h4>Continuum of Care</h4>
+
+		<p>As more and more countries adopt eHealth systems, including OpenSRP, attention quickly shifts to the need for integration of existing electronic health systems to ensure the continuity of care for patients within a population and to eliminate duplicate efforts.  By integrating with OpenMRS, patient data that is entered in OpenSRP also becomes available in OpenMRS.  In health settings where governments have adopted OpenSRP at the community level and OpenMRS in hospitals and other tertiary level facilities, patients can easily start treatment at their community health center and then subsequently seek care at a hospital or other higher level facility and have their medical records be securely and automatically transferred.</p>
+
+	</div>
+</div>
+
+<div class="container footer">
+		<div class="col-md-6" style="padding-top: 5px;">
+			<a href="index.html">Home</a>
+			<a href="about-about-opensrp.html">About</a>
+			<a href="tech-different.html">Technology</a>
+			<a href="adaptation-overview.html">Adaptation Process</a>
+			<a href="implementations-pakistan.html">Implementations</a>
+		</div>
+		<div class="col-md-6" >
+			<img src="img/logo-footer.png" height="25px" style="position: absolute; right:0px;">
+		</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
