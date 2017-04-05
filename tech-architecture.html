@@ -59,20 +59,20 @@
 		<h3>OpenSRP Client Technologies</h3>
 		<p>The OpenSRP client (Android application) code lives in a <a href="https://github.com/OpenSRP/opensrp-client">Git repository</a>.  The README file includes instructions to setup the system and also contains the public credentials for testing the application.</p>
 
-		<p>A brief of the technologies used in the OpenSRP Client:</p>
+		<p>A brief overview of the technologies used in the OpenSRP Client:</p>
 		
 		<p><img src="img/tech-client-tech.jpg" width="100%"></p>
 
 		<div class="col-md-6">
 
 		<h5>Smart Register Client (Android)</h5>
-		<p>Standard Android application that hosts the client record store, ziggy, Enketo HTML5 forms, webviews via android native in addition to ability to synchronize to the Smarty Register backend.</p>
+		<p>Standard Android application that hosts the client record store, ziggy, Enketo HTML5 forms, and webviews via android native in addition to the ability to synchronize to the Smarty Register backend.</p>
 
 		<h5>Client Records</h5>
-		<p>Client records are stored in SqlLite and then encrypted with SqlCypher for basic aggregate reporting.</p>
+		<p>Client records are stored in SQLite and then encrypted with SqlCypher for basic aggregate reporting.</p>
 		
 		<h5>Smart Register Views</h5>
-		<p>Register UI is done with Android native code. This makes development of new UI’s components very quick.</p>
+		<p>The Smart Register UI is done with Android native code. This makes development of new UI components very quick.</p>
 		</div>
 
 		<div class="col-md-6">
@@ -83,7 +83,7 @@
 		<p>Enketo HTML5 forms are authored from XLSForms in Ona. Using HTML5 removes the Javarosa dependency. To be saved in OpenMRS, all concepts from the client have the corresponding concept UUID. </p>
 		
 		<h5>Risk Profiling</h5>
-		<p>Custom logic, authored on the xlsforms that evaluates as client information comes in if they are at high risk.</p>
+		<p>Custom logic authored in the XLSForms evaluates patient risk as client information comes in and shows an alert if patients are at high risk.</p>
 		</div>
 
 	
@@ -91,32 +91,32 @@
 		<h3>OpenSRP Server Technologies</h3>
 		<p>OpenSRP server code lives in a <a href="https://github.com/OpenSRP/opensrp-server">Git repository</a>.  The README file includes instructions to setup the system and the public credentials for testing the app.</p>
 		
-		<p>OpenSRP server runs CouchDB - a document-oriented NoSQL database system that uses json to store data. All data collected from the client and stored on couchDB is also stored in OpenMRS; at this point, we leverage the excellent and robust functionalities of OpenMRS including reporting, querying etc.</p>
+		<p>The OpenSRP server runs CouchDB - a document-oriented NoSQL database system that uses JSON to store data. All data collected from the client and stored on CouchDB is also stored in OpenMRS; at this point, we leverage the excellent and robust functionalities of OpenMRS including reporting, querying etc.</p>
 
-		<p>A brief of the technologies used in the OpenSRP Client:</p>
+		<p>A brief overview of the technologies used in the OpenSRP Server:</p>
 
 		<p><img src="img/tech-server-tech.jpg" width="100%"></p>
 
 		<div class="col-md-6">
 
 		<h5>Scheduling Engine</h5>
-		<p>OpenSRP uses motech library for all types of scheduling; all in 2 categories:</p>
+		<p>OpenSRP uses the Motech library for scheduling as follows:</p>
 		<ol>
-			<li>Simple task or event scheduling: It includes repeatable schedules, cron based jobs, and simple events which have no dependencies.</li>
-			<li>Trackable/Health schedule: Predefined schedules having different strategy or schedule for different periods of time from a given reference date.</li>
+			<li>Simple task or event scheduling: this includes repeatable schedules, cron jobs, and simple events which have no dependencies.</li>
+			<li>Trackable/Health scheduling: this includes predefined schedules having a different strategy or schedule for different periods of time from a given reference date.</li>
 
 		<h5>Client Records</h5>
-		<p>Currently stored in a simple CouchDB database and in OpenMRS.</p>
+		<p>Client records stored in a simple CouchDB database and in OpenMRS.</p>
 	</div>
 		<div class="col-md-6">	
 		<h5>OpenSRP-OpenMRS connector</h5>
-		<p>User authentication, location and team mapping modules reside at OpenMRS and are used by the OpenSRP client.</p>
+		<p>User authentication, location and team mapping modules reside in OpenMRS and are used by the OpenSRP client.</p>
 
 		<h5>Ziggy.js</h5>
-		<p>Ziggy submissions are replayed in a Rhino JS server. This recreates the client records in the backend that are on the Android client.</p>
+		<p>Ziggy submissions are replayed in a Rhino JS server. This recreates client records that had been on the Android client.</p>
 
 		<h5>OpenMRS</h5>
-		<p>A patient-centric, widely used medical record system used for view of registries and reports. Gets data from the REST API.</p>
+		<p>OpenMRS is a patient-centric, widely used medical record system. OpenSRP uses OpenMRS to view registries and reports and fetch data from its REST API.</p>
 	</div>
 	</div>
 </div>
