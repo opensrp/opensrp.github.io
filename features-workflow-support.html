@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Features: Client Identification &amp; Registration | Open Smart Register Platform</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script type="text/javascript" src="//use.typekit.net/cqm0oty.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo-mini.png" class="img-responsive"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navigation"></div>
+
+	<script>
+        $("#navigation").load("resources/nav.html");
+	</script>
+
+  </div>
+</header>
+
+
+<div class="container content-box">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+	            <li><a href="features-what-is-opensrp.html">What is OpenSRP?</a></li>
+	            <li><a href="features-client-id-registration.html">Client Identification &amp; Registration</a></li>
+	            <li><a href="features-client-management.html">Client Management</a></li>
+	            <li class="active"><a href="features-workflow-support.html">Health Worker Workflow Support &amp; Reporting</a></li>
+	            <li><a href="features-interoperability.html">Interoperability</a></li>
+	            <li><a href="features-project-monitoring.html">Project Monitoring &amp; Performance Management</a></li>
+	            <li><a href="features-supply-chain-management.html">Supply Chain Management</a></li>
+		</ul>
+	</div>
+	<div class="col-md-9">
+		
+		<h2>Health Worker Workflow Support & Reporting</h2>
+
+		<br>
+		<p>Health worker workflow support and reporting features support all cadres of frontline health workers in multiple geographies to provide quality care and quality data that is required for local and national health systems performance monitoring. Web forms embedded into the application contain input constraint and decision logic that enables health workers to collect a client’s health information that is key for flagging high risk patients, potential diagnosis, and/or need for referral to a district or even provincial level health facility. These forms also provide response prompts for health workers depending on answers given.</p>
+
+		<p>Based on inputs and decision logic, scheduling can also be automated so health workers can prioritize clients based on risk and/or date of services due. These job aids built into the system alleviate health workers’ day-to-day burdens and allow for greater adherence to care standards.</p>
+
+		<h4>Automated Scheduling</h4>
+		<p>OpenSRP uses advanced, multi-parameter scheduling logic to ensure frontline health workers provide services in alignment with national and global health standards of care.  Health service reminders are displayed as color-coded alerts to the health worker based on the urgency of the service due, ensuring that clients receive appropriate and timely healthcare.</p>
+
+		<p><img src="img/tech-auto-scheduling.png" width="100%"></p>
+		<p><img src="img/tech-scheduling-immunizations.png" width="100%"></p>
+
+		<br>
+
+		<h4>Risk Profiling</h4>
+		
+		<p>OpenSRP has the ability to automatically profile and flag patients who are at high risk for adverse health outcomes.  Profiling logic can be customized to the local health setting and is embedded in the form logic.  Health workers are alerted to high risk cases when they look up the patient and at the point of data entry.  Customized messages and decision support in the forms are based on the specific risk profile of the client and serve to remind the health worker of appropriate medical guidelines and protocols.</p>
+
+		<p><img src="img/tech-risk-profiling1.png" width="100%"></p>
+		<p><img src="img/tech-risk-profiling2.png" width="50%"></p>
+
+		<br>
+
+		<h4>Counselling materials</h4>
+
+		<p>OpenSRP supports multimedia use for clients, such as health education and counseling videos.  Health workers can easily switch from their smart register view to the video module during client encounters to couple health service provision with client education and counseling.</p>
+
+		<p><img src="img/tech-multimedia.png" width="100%"></p>
+
+		<br>
+		<h4>List of features:</h4>
+		<ul>
+			<li>In-app display of aggregate service information (e.g. daily tallies)</li>
+			<li>Display color coded service reminders based on priority</li>
+			<li>Automated scheduling (back-end)</li>
+			<li>Automated notifications based on in-app logic for health services (e.g. counselling scripts, alert for risk factors for poor child development, reminder to record weight, reminder to check BCG scars, etc.)</li>
+			<li>Flag high risk clients</li>
+			<li>Counselling materials (e.g. informational pamphlets, reference manuals, multimedia, etc.)</li>Workflow support chat bots for health workers  – IN PROGRESS</li>
+		</ul>
+
+	</div>
+</div>
+
+
+<div class="container footer">
+		<div class="col-md-9" style="padding-top: 5px;">
+			<a href="index.html">Home</a>
+			<a href="about-about-opensrp.html">About</a>
+			<a href="tech-different.html">Technology</a>
+			<a href="adaptation-overview.html">Adaptation Process</a>
+			<a href="implementations-pakistan.html">Implementations</a>
+			<a href="https://twitter.com/opensrp" style="color:#999">Follow @OpenSRP</a>
+		</div>
+		<div class="col-md-3" >
+			<img src="img/logo-footer.png" height="25px" style="position: absolute; right:0px;">
+		</div>
+</div>
+
+</body>
+</html>
