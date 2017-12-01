@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Technology | Open Smart Register Platform</title>
+<title>Adaptation Process | Open Smart Register Platform</title>
 <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
@@ -37,7 +37,7 @@
 	<script>
         $("#navigation").load("resources/nav.html");
 	</script>
-
+	
   </div>
 </header>
 
@@ -45,30 +45,22 @@
 <div class="container content-box">
 	<div class="col-md-3">
 		<ul class="nav nav-pills nav-stacked">
-	            <li><a href="tech-different.html">How is it different?</a></li>
-	            <li><a href="tech-features.html">OpenSRP Features</a></li>
-	            <li><a href="tech-architecture.html">System Architecture</a></li>
-	            <li><a href="tech-vendors.html">Technologies &amp; Vendors</a></li>
-	            <li class="active"><a href="tech-documentation.html">Documentation &amp; Collaboration</a></li>
+	            <li><a href="adaptation-overview.html">Process Overview</a></li>
+	            <li><a href="adaptation-architecture.html">System Architecture</a></li>
+	            <li class="active"><a href="adaptation-technologies.html">Technologies</a></li>
+	            <li><a href="adaptation-vendors.html">Vendors</a></li>
+	            <li><a href="adaptation-documentation.html">Documentation & Collaboration</a></li>
 		</ul>
 	</div>
 	<div class="col-md-9">
 		
-		<h2>Documentation &amp; Collaboration</h2>
+		<h2>Technologies</h2>
+		<br>
+		<p>OpenSRP leverages several popular open source platforms combined with new open source technologies that were developed to make it easier to create interactive and intelligent mobile interfaces. The mobile client consists of an Android application optimized for tablets and smartphones. Data entry is done through Enketo webforms and native Android forms, which support multiple languages, calculations, skip logic, constraint checks, etc. Forms can be authored with XLSForms. The app works offline and can sync data intelligently when there is an internet connection.</p>
+		<p>The OpenSRP backend server is CouchDB, which provides the ability to store client records in a document-based database for easier storage and retrieval.  The CouchDB server syncs client data to OpenMRS, which can be used as a backend EMR store for patient data. Updates made in OpenMRS can sync back to the OpenSRP server and client applications as well. All data in OpenSRP is mapped to the global CIEL concept dictionary. Several modules in OpenMRS, including the Team Management Module (TMM) and DHIS2 Location Import Module, are used to manage team and user permissions and to import location hierarchies from DHIS2, respectively.</p>
+		<p>For more information on the technologies and platforms used in OpenSRP, see the <a href="adaptation-architecture.html">system diagram</a>.</p>
+</p>
 
-		<h4>OpenSRP Wiki</h4>
-		<p>All technical documentation on OpenSRP resides on the wiki: <a href="http://smartregister.atlassian.net">http://smartregister.atlassian.net</a>. This is the best place to start if you are interested in contributing to OpenSRP development.</p>
-
-
-		<h4>Join the Conversation</h4>
-		<p>Have any questions, drop us an email on the <a href="https://groups.google.com/forum/#!forum/opensrp-dev">Developer’s Mailing List.</a></p>
-
-		<h4>License</h4>
-		<p>The <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a> gives you the right to use, copy, distribute and modify the OpenSRP software.  However, this license does not grant anyone the right to use the OpenSRP brand or logo.<p>
-		<p>The application is available for free download and can run on any 7 inch or larger mobile device running the latest Android software.</p>
-
-		<h4>OpenSRP Collaboration</h4>
-		<p>The OpenSRP client (Android application) code lives in a <a href="https://github.com/OpenSRP/opensrp-client">Git repository</a> and the OpenSRP server code lives in a <a href="https://github.com/OpenSRP/opensrp-server">Git repository</a>. The README file includes instructions to setup the system and also contains the public credentials for testing the application.</p>
 
 	</div>
 </div>
