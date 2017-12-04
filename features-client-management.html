@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Features: Client Management | Open Smart Register Platform</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script type="text/javascript" src="//use.typekit.net/cqm0oty.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+          <img src="img/logo-mini.png" class="img-responsive"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navigation"></div>
+
+	<script>
+        $("#navigation").load("resources/nav.html");
+	</script>
+
+  </div>
+</header>
+
+
+<div class="container content-box">
+	<div class="col-md-3">
+		<ul class="nav nav-pills nav-stacked">
+	            <li><a href="features-what-is-opensrp.html">What is OpenSRP?</a></li>
+	            <li><a href="features-client-id-registration.html">Client Identification &amp; Registration</a></li>
+	            <li class="active"><a href="features-client-management.html">Client Management</a></li>
+	            <li><a href="features-workflow-support.html">Health Worker Workflow Support &amp; Reporting</a></li>
+	            <li><a href="features-interoperability.html">Interoperability</a></li>
+	            <li><a href="features-project-monitoring.html">Project Monitoring &amp; Performance Management</a></li>
+	            <li><a href="features-supply-chain-management.html">Supply Chain Management</a></li>
+		</ul>
+	</div>
+	<div class="col-md-9">
+		<h5>Features</h5>
+		<h2>Client Management</h2>
+
+		<br>
+		<p>Client management features promote continuity of care across life stages by ensuring clients receive the complete package of health services with automated scheduling and showing reminders for follow-up visits and required services. These features enable health workers to see a holistic view of their clients and easily manage client records.</p>
+
+		<h4>Client Lookups</h4>
+		<p>With paper registers, client lists are static, which makes client lookups difficult. For frontline health workers, who often go door to door to provide health checkups, it would be useful to have a way to dynamically filter, sort, and search for clients based on her movements through her community or catchment area.</p>
+
+		<p>OpenSRP has a customizable array of dynamic sort and filter options to rearrange and filter down lists of clients to better match a health worker’s immediate work needs.  Once time-consuming tasks such as looking up clients by family planning method becomes effortless.</p>
+
+		<p><img src="img/tech-ec-sort01.png" width="100%"></p>
+		<p><img src="img/tech-ec-sort02.png" width="100%"></p>
+
+		<br>
+
+		<h4>Enketo Webforms</h4>
+
+		<p>OpenSRP uses Enketo webforms and native Android forms for data entry.  Forms are launched directly from the smart registers at the tap of a button and allow for offline data entry in areas where a network connection is not always available. Data submitted in the form instantly updates the client's record in the digital register without requiring a sync with the server.   Data is safely stored offline until the device has a network connection and the data is submitted to the server.</p>
+
+		<p>Web and native Android forms are the next evolution of electronic forms, as they allow the user to enter data in a non-linear and less restrictive format, which is a critical factor for user uptake and satisfaction.  Skip logic becomes visible, allowing the health worker to see data fields expand or collapse based on their input. Teams can author their forms using the XLSForm standard, which allows users to have the control they need in their forms to ensure high data quality and fidelity.</p>
+
+		<p><img src="img/tech-enketo.png" width="90%"></p>
+		
+		<br>
+		<h4>List of features:</h4>
+
+		<ul>
+			<li>In-form calculations (e.g. pregnancy risk calculation, expected delivery date, age from birthdate, nutritional status)</li>
+			<li>Automated growth chart plotting by client</li>
+			<li>Send SMS scheduling reminders to beneficiaries before and/or on day of visit</li>
+			<li>Send SMS health promotion messages</li>
+			<li>Offline schedules</li>
+			<li>Dynamic search by specificspecified parameters (e.g. ID number, name, QR code, facial recognition, location)</li>
+			<li>Dynamic filter by specified parameters (e.g. location, service prioritization, etc.)</li>
+			<li>Sort by specified parameters (e.g. alphabetical order, service prioritization, etc.)</li>
+			<li>Register visit and services provided (including data such as HIV status, weight, pregnancy status, last menstrual period, etc.)</li>
+			<li>Edit/Update service history</li>
+			<li>Automated blood pressure recording</li>
+			<li>Track data entry by separate health worker logins</li>
+			<li>Pre-population of vaccines</li>
+			<li>Data entry constraints</li>
+			<li>Display service history by client (including vaccination history, health indicators, vitals, etc.)</li>
+			<li>User configurable views  – IN PROGRESS</li>
+		</ul>
+
+
+	</div>
+</div>
+
+
+<div class="container footer">
+		<div class="col-md-9" style="padding-top: 5px;">
+			<a href="index.html">Home</a>
+			<a href="features-what-is-opensrp.html">Features</a>
+			<a href="solutions-different.html">Solutions</a>
+			<a href="adaptation-overview.html">Adaptation Process</a>
+			<a href="casestudies-study.html">Case Studies</a>
+			<a href="https://twitter.com/opensrp" style="color:#999">Follow @OpenSRP</a>
+		</div>
+		<div class="col-md-3" >
+			<img src="img/logo-footer.png" height="25px" style="position: absolute; right:0px;">
+		</div>
+</div>
+
+</body>
+</html>
