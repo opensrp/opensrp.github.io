@@ -55,13 +55,13 @@
 	<div class="col-md-9">
 		<h5>Adaptation Process</h5>
 		<h2><a name="systemArchitecture">System Architecture</a></h2>
-		
+		<br>
 		<p>OpenSRP utilizes three core systems to manage the mobile implementation: the Android client, OpenSRP server and OpenMRS server. The Android client is a mobile application that can be installed on Android tablets and smartphones. This is the primary tool of frontline health workers that helps them track the care of client populations. The Android client pushes to the OpenSRP server, which is a centralized system for managing the mobile deployment, reporting and integrating with other systems. The OpenSRP server ensures all mobile devices are synced with the right information. OpenSRP utilizes OpenMRS as the medical record store for all client information. OpenMRS provides core functionality for role-based access controls, locations, team management and a robust health data model that has been proven by the industry.</p>
 
 		<p><img src="img/opensrp_core_architecture.png" width="100%" alt="Diagram of OpenSRP core architecture showing health worker on Android client, OpenSRP server and OpenMRS server." /></p>
 
 		<p>Beyond this, OpenSRP is able to connect to third party tools for reporting (DHIS2, Tableau and electronic data warehouses) and direct-to-client messaging through RapidPro.</p>
-		
+		<br>
 		<h3><a name="androidClient">OpenSRP Android Client</a></h3>
 		<p>The OpenSRP Android client provides the core frontline health worker interactions with OpenSRP. The Android application runs on tablets and smartphones and is custom-configured to deliver workflows for the target context. Each implementation of OpenSRP creates a custom-tailored application that uses reusable modules and libraries. This allows us to develop a common set of features that are shared across implementations.</p>
 
@@ -77,7 +77,7 @@
 		<p>The OpenSRP client apps, modules and libraries are maintained on the <a href="https://github.com/OpenSRP/">OpenSRP GitHub organization.</a> Search for the word "client" to filter the list of repositories.</p>
 
 		<p>The <a href="https://github.com/OpenSRP/opensrp-client-path">Zambia Electronic Immunization Register (ZEIR)</a> is an example of an application that contains branding and business logic that's specific to the Zambia context. It depends on numerous modules such as the <a href="https://github.com/OpenSRP/opensrp-client-immunization">Child Immunization</a> and <a href="https://github.com/OpenSRP/opensrp-client-growth-monitoring">Growth Monitoring</a> modules. It also depends on the <a href="https://github.com/OpenSRP/opensrp-client-core">Client Core libraries</a>. The README file in each repository includes instructions to set up the system and learn more about the implementation. Further details can be found in the <a href="https://smartregister.atlassian.net/wiki/spaces/Documentation/pages/6619193/OpenSRP+Developer+s+Guide">developer's guide on the OpenSRP wiki.</a></p>
-
+		<br>
 		<h3><a name="opensrpServer">OpenSRP Server</a></h3>
 		<p>The OpenSRP server provides the core workforce management features that ensure all mobile devices are synced, stores client information in the Event-Client (EC) data model and maintains an active connection to OpenMRS. The server also integrates with reporting and third party systems.</p>
 
@@ -88,7 +88,7 @@
 		<p>The OpenSRP server source code lives in a single <a href="https://github.com/OpenSRP/opensrp-server">GitHub repository</a>. Each implementation maintains their own branch, with common libraries shared between branches. This allows for code reuse in a modular fashion across multiple implementations. The README file includes instructions to set up the system and the public credentials for testing the app.</p>
 		
 		<p>The OpenSRP server runs CouchDB as the central data store, which is a document-oriented NoSQL database system that uses JSON files to store data. All data collected from the client and stored on CouchDB is also stored in OpenMRS.</p>
-
+		<br>
 		<h3><a name="openmrsServer">OpenMRS Server</a></h3>
 		<p>The OpenMRS server provides core functionality to the platform, including user and team management, location management, a robust data store, concept dictionary and light reporting. The OpenMRS community continually drives features independent of OpenSRP that add value to health systems globally. OpenSRP partners with this community to ensure our systems include features that can robustly add value for OpenSRP implementations.</p>
 
@@ -103,7 +103,7 @@
 			<li>(Optional) <b>DHIS2 Location Sync:</b> OpenMRS is able to pull down locations from a DHIS2 facility registry into the system. This is a convenient way to ensure the locations are in line with the national system.</li>
 			<li>(Optional) <b>Light Reporting:</b> OpenMRS has a built-in reporting module that allows implementers to perform light reporting. Complex reporting traditionally uses an ETL or data streaming through integrating with third party tools.</li>
 		</ul>
-
+		<br>
 		<h3><a name="optionalIntegrations">Optional Integrations</a></h3>
 		<p>OpenSRP is able to integrate at the server level with multiple systems, including DHIS2 for required national reporting, RapidPro for direct-to-client interactions, OpenLMIS for stock management and third party data analytics platforms. Each of these integrations unlocks new workflows for implementers and has the ability to add significant value for feedback loops across the entire health system. Below is a list of integrations that are already available.</p>
 
